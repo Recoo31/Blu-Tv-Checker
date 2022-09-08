@@ -58,7 +58,7 @@ namespace RecooChecker
                 string[] lines = File.ReadAllLines(@"Result\Hit.txt");
                 string[] value;
 
-
+                table.Rows.Clear();
                 for (int super = 0; super < lines.Length; super++)
                 {
                     value = lines[super].ToString().Split(':');
@@ -86,7 +86,7 @@ namespace RecooChecker
                 string[] lines = File.ReadAllLines(@"Result\Free.txt");
                 string[] value;
 
-
+                table.Rows.Clear();
                 for (int super = 0; super < lines.Length; super++)
                 {
                     value = lines[super].ToString().Split(':');
